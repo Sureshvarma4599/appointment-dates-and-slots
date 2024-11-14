@@ -37,14 +37,14 @@ const Appointments = () => {
 
   return (
     <div className="appointments-container">
-      <h2>Pick a date</h2>
+      <h2 className="text-start">Pick a date</h2>
       <DatePicker
         groupedSlots={groupedSlots}
         selectedDate={selectedDate}
         setSelectedDate={handleDateSelect}
       />
-      <h3>Available time slots</h3>
-      <p>Each session lasts for 30 minutes</p>
+      <h3 className="text-start">Available time slots</h3>
+      <p className="text-start">Each session lasts for 30 minutes</p>
       <div className="time-slots cards">
         {availableSlots.length > 0 ? (
           isLoading ? (
