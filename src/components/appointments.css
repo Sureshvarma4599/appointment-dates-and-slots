@@ -1,0 +1,76 @@
+.appointments-container {
+    padding: 20px;
+  }
+  .date-picker {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+  }
+  .date-button {
+    padding: 14px 28px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .date-button.selected {
+    background-color: #e0e0e0;
+  }
+  .time-slots {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  .time-slot-button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .time-slot-button.selected {
+    background-color: #d1e7dd;
+  }
+  .cards{
+    max-width:480px;
+    margin: auto;
+  }
+
+  .date-picker-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .date-picker.cards {
+    flex: 1;
+    overflow-x: auto;
+    display: flex;
+    scroll-behavior: smooth;
+  }
+  
+  .scroll-button {
+    background: #ddd;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .scroll-button.left {
+    margin-right: 10px;
+  }
+  
+  .scroll-button.right {
+    margin-left: 10px;
+  }
+  
+  .date-button {
+    margin: 5px;
+    padding: 10px;
+  }
+  
+  .date-button.selected {
+    background-color: #4285f4;
+    color: white;
+  }
+  
