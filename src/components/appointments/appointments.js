@@ -1,9 +1,9 @@
 // Main component to display available time slots for appointments
 import React, { useState, useEffect } from "react";
-import slotsData from "../data/slots.json";
-import "./appointments.css";
-import DatePicker from "./dates";
-import { groupSlotsByDate } from "../utils/utils";
+import slotsData from "../../data/slots.json";
+import "../appointments.css";
+import DatePicker from "../dates/dates";
+import { groupSlotsByDate } from "../../utils/utils";
 
 const Appointments = () => {
   const [groupedSlots, setGroupedSlots] = useState([]);
@@ -20,6 +20,7 @@ const Appointments = () => {
     setIsLoading(true);
     const dateSlots = groupedSlots.find((group) => group.date === date);
     setSelectedDate(date);
+    setSelectedSlot(null);
     setAvailableSlots(dateSlots ? dateSlots.slots : []);
     setTimeout(() => {
       setIsLoading(false); // loader for better user experience

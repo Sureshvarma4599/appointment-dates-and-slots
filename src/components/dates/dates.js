@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import "./appointments.css";
+import "../appointments.css";
 
 const DatePicker = ({ groupedSlots, selectedDate, setSelectedDate }) => {
   const scrollContainerRef = useRef(null);
