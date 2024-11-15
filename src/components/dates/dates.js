@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import "../appointments.css";
 
